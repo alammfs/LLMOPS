@@ -80,3 +80,11 @@ CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8080", "--reload
 docker run -d -p 8080:8080 --name alam-doc-portal doc-portal:latest
 
 aws cloudformation deploy --template-file template.yml --stack-name doc-analysis-stack --capabilities CAPABILITY_NAMED_IAM
+
+
+Setup is done for unit test cases
+You have to write at least 10 unit test cases inside test folder > unit_test.py
+optional explore integration test cases
+
+After pushing the code over the github we are runing our test cases;
+Precommit test cases
