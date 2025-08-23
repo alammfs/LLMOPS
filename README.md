@@ -67,3 +67,14 @@ git clone https://github.com/sunnysavita10/document_portal.git
 - [Gemini Documentation](https://ai.google.dev/gemini-api/docs/models)
 
 
+https://hub.docker.com/layers/sunnysavita1095/document-portal-app/latest/images/sha256-ac61ae1c8766a6c7d4de6f8d9a97279c95c0e3302a1d591548ce467a8a6c9d29
+
+login to dockerhub and search name sunnysavita1095 
+docker container is nothing but an isolated machine inside system or virtual machine and it is linux based machine/environment
+docker build -t my-document-portal:latest .
+docker compose concept
+as of now logs in our application all logs goes to container
+docker compose is a very important concept
+docker run -d -p 8093:8080 --name doc-portal my-document-portal:latest
+CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8080", "--reload"]
+docker run -d -p 8080:8080 --name alam-doc-portal doc-portal:latest
