@@ -36,12 +36,14 @@ jobs:
 
     - name: Deploy ECR stack (optional)
       run: |
+        IMAGE_URI=${{ steps.build-image.outputs.image }}
         aws cloudformation deploy \
           --template-file .github/workflows/template.yml \
           --stack-name ecr-repo-stack \
           --region ${{ env.AWS_REGION }} \
-          --capabilities CAPABILITY_NAMED_IAM
-
+          --capabilities CAPABILITY_NAMED_IAM \
+          --parameter-overrides ImageUrl=$IMAGE_URI
+          
     - name: Login to Amazon ECR
       id: login-ecr
       uses: aws-actions/amazon-ecr-login@v1
