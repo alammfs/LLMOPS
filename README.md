@@ -78,3 +78,5 @@ docker compose is a very important concept
 docker run -d -p 8093:8080 --name doc-portal my-document-portal:latest
 CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8080", "--reload"]
 docker run -d -p 8080:8080 --name alam-doc-portal doc-portal:latest
+
+aws cloudformation deploy --template-file template.yml --stack-name doc-analysis-stack --capabilities CAPABILITY_NAMED_IAM
