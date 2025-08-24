@@ -38,7 +38,7 @@ app.add_middleware(
 
 @app.get("/", response_class=HTMLResponse)
 async def serve_ui(request: Request):
-    log.info("Serving UI homepage checked.")
+    log.info("Serving UI homepage.")
     resp = templates.TemplateResponse("index.html", {"request": request})
     resp.headers["Cache-Control"] = "no-store"
     return resp
