@@ -3,8 +3,8 @@ __pycache__/
 *.pyo
 *.pyd
 .Python
-env/
-llm-dp/
+llm-env/
+venv/
 .git
 .gitignore
 *.log
