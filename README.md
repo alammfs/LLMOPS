@@ -66,6 +66,4 @@ git clone https://github.com/sunnysavita10/document_portal.git
 - [Get your API Key](https://aistudio.google.com/apikey)  
 - [Gemini Documentation](https://ai.google.dev/gemini-api/docs/models)
 
-238153557976.dkr.ecr.ap-south-1.amazonaws.com/documentportalliveclass
-
 
