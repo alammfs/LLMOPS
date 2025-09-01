@@ -220,7 +220,7 @@
 # # def get_secret():
 
 # #     secret_name = "api_keys"
-# #     region_name = "ap-southeast-2"
+# #     region_name = "ap-south-1"
 
 # #     # Create a Secrets Manager client
 # #     session = boto3.session.Session()
@@ -254,7 +254,7 @@
 #   "containerDefinitions": [
 #     {
 #       "name": "document-portal-container",
-#       "image": "459497895986.dkr.ecr.ap-southeast-2.amazonaws.com/documentportalliveclass",
+#       "image": "459497895986.dkr.ecr.ap-south-1.amazonaws.com/documentportalliveclass",
 #       "cpu": 1024,
 #       "essential": true,
 #       "portMappings": [
@@ -275,12 +275,12 @@
 #       "secrets": [
 #         {
 #           "name": "GROQ_API_KEY",
-#           "valueFrom": "arn:aws:secretsmanager:ap-southeast-2:459497895986:secret:api_keys-nZTtj8"
+#           "valueFrom": "arn:aws:secretsmanager:ap-south-1:459497895986:secret:api_keys-nZTtj8"
 #         },
         
 #         {
 #           "name": "GOOGLE_API_KEY",
-#           "valueFrom": "arn:aws:secretsmanager:ap-southeast-2:459497895986:secret:api_keys-nZTtj8"
+#           "valueFrom": "arn:aws:secretsmanager:ap-south-1:459497895986:secret:api_keys-nZTtj8"
 #         }
         
 #       ],
@@ -288,7 +288,7 @@
 #         "logDriver": "awslogs",
 #         "options": {
 #           "awslogs-group": "/ecs/documentportaltd",
-#           "awslogs-region": "ap-southeast-2",
+#           "awslogs-region": "ap-south-1",
 #           "awslogs-stream-prefix": "ecs",
 #           "awslogs-create-group": "true"
 #         }
