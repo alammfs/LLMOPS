@@ -1,4 +1,4 @@
-llm-dp
+envdp/
 .env
 document_portal.egg-info
 venv/
