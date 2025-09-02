@@ -219,7 +219,7 @@
 
 # # def get_secret():
 
-# #     secret_name = "api_keys"
+# #     secret_name = "llm_api_keys"
 # #     region_name = "ap-south-1"
 
 # #     # Create a Secrets Manager client
@@ -275,12 +275,12 @@
 #       "secrets": [
 #         {
 #           "name": "GROQ_API_KEY",
-#           "valueFrom": "arn:aws:secretsmanager:ap-south-1:459497895986:secret:api_keys-nZTtj8"
+#           "valueFrom": "arn:aws:secretsmanager:ap-south-1:459497895986:secret:llm_api_keys-nZTtj8"
 #         },
         
 #         {
 #           "name": "GOOGLE_API_KEY",
-#           "valueFrom": "arn:aws:secretsmanager:ap-south-1:459497895986:secret:api_keys-nZTtj8"
+#           "valueFrom": "arn:aws:secretsmanager:ap-south-1:459497895986:secret:llm_api_keys-nZTtj8"
 #         }
         
 #       ],
